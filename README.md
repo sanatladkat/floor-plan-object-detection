@@ -1,5 +1,8 @@
 # Architectural Floor Plan Object Detection
 
+[![DOI](https://zenodo.org/badge/774683487.svg)](https://doi.org/10.5281/zenodo.18112721)  
+**DOI**: [10.5281/zenodo.18112721](https://doi.org/10.5281/zenodo.18112721)
+
 ## Overview
 
 This project aims to develop an object detection system for architectural floor plans using the YOLOv8 model. The system was trained to detect various elements commonly found in floor plans, such as columns, walls, doors, windows, etc. Given an input image of a floor plan, the system will accurately identify and label these elements.
@@ -8,8 +11,8 @@ This project aims to develop an object detection system for architectural floor 
 
 ## Dataset
 
-The dataset consisted of labeled images of architectural floor plans, categorized into classes such as 'Column', 'Wall', 'Door', etc. Each image is accompanied by its corresponding label file specifying the location and class of each object within the image.
-(https://universe.roboflow.com/walldetect-f9eio/floor_plan_multiple)
+The dataset consisted of labeled images of architectural floor plans, categorized into classes such as 'Column', 'Wall', 'Door', etc. Each image is accompanied by its corresponding label file specifying the location and class of each object within the image.  
+[Floor Plan Dataset on Roboflow](https://universe.roboflow.com/walldetect-f9eio/floor_plan_multiple)
 
 ## Technology Stack
 
@@ -52,10 +55,26 @@ This Streamlit web application allows users to upload images containing floor pl
 To run this application locally, follow these steps:
 
 1. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/yourusername/architectural-floor-plan-object-detection.git
+````
+
 2. Navigate to the project directory.
-3. Install the required dependencies: `pip install -r requirements.txt`.
-4. Run the Streamlit app: `streamlit run app.py`.
-5. Access the application in your web browser.
+
+   ```bash
+   cd architectural-floor-plan-object-detection
+   ```
+3. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the Streamlit app:
+
+   ```bash
+   streamlit run app.py
+   ```
+5. Access the application in your web browser (usually at `http://localhost:8501`).
 
 ## Usage
 
@@ -65,17 +84,89 @@ To run this application locally, follow these steps:
 4. Detected objects will be displayed on the uploaded image along with their counts.
 5. Click the "Export to CSV" button to export the detected objects and their counts to a CSV file.
 
-## Dependencies
+## Configuration
 
-- Streamlit
-- Pillow
-- Ultralytics
+This project uses a `config.yaml` file for configuring model parameters such as:
+
+* **confidence_threshold**: The minimum confidence score for detecting objects (default: `0.5`).
+* **model_weights**: Path to the pre-trained model (default: `best.pt`).
+
+Example of `config.yaml`:
+
+```yaml
+confidence_threshold: 0.5
+model_weights: best.pt
+```
+
+## Model Details
+
+The YOLOv8 model was trained to detect various elements in architectural floor plans, such as:
+
+* Walls
+* Doors
+* Windows
+* Columns
+
+The model was trained using a custom dataset with [X] images over [Y] epochs. The model achieves a precision of [Z]% and recall of [W]% on the validation set.
+
+## Examples
+
+### Input: Floor Plan Image
+
+![Floor Plan Input](example-input.jpg)
+
+### Output: Detected Objects
+
+![Detected Objects](example-output.jpg)
+
+## FAQ
+
+**Q1: How can I improve the model's accuracy?**
+A1: You can try training with more data or adjusting the hyperparameters in the config file.
+
+**Q2: Can I use a custom floor plan dataset for training?**
+A2: Yes! You can upload your dataset to Roboflow and follow the instructions on how to format it for YOLOv8.
+
+**Q3: How do I change the confidence threshold?**
+A3: You can adjust the confidence threshold in the sidebar of the Streamlit app or modify it in the `config.yaml` file.
+
+## Contributing
+
+We welcome contributions! If you'd like to contribute to this project:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request for review
+
+Please follow the code style outlined in `.editorconfig` and ensure all tests pass before submitting your pull request.
+
+## Running Tests
+
+To run tests on your local machine:
+
+1. Install the test dependencies:
+
+   ```bash
+   pip install -r requirements-test.txt
+   ```
+2. Run the tests using `pytest`:
+
+   ```bash
+   pytest tests/
+   ```
 
 ## Acknowledgements
 
-- YOLOv8: [Ultralytics YOLO](https://github.com/ultralytics/yolov5)
-- Streamlit: [Streamlit Documentation](https://docs.streamlit.io/)
-- PIL: [Pillow Documentation](https://pillow.readthedocs.io/en/stable/)
+* **YOLOv8**: [Ultralytics YOLO](https://github.com/ultralytics/yolov5)
+* **Streamlit**: [Streamlit Documentation](https://docs.streamlit.io/)
+* **Pillow**: [Pillow Documentation](https://pillow.readthedocs.io/en/stable/)
+* **Dataset**: [Roboflow - Floor Plan Dataset](https://universe.roboflow.com/walldetect-f9eio/floor_plan_multiple)
+* **Special Thanks** to [Autodesk](https://www.autodesk.com/) for their interest in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Citation
 
@@ -84,3 +175,17 @@ If you use this code in your research or projects, please cite it as follows:
 [![DOI](https://zenodo.org/badge/774683487.svg)](https://doi.org/10.5281/zenodo.18112721)
 
 DOI: [10.5281/zenodo.18112721](https://doi.org/10.5281/zenodo.18112721)
+
+```
+
+### Key Additions:
+1. **DOI Badge and Citation** at the top, so users can easily cite your work.
+2. **Installation Instructions** with specific steps.
+3. **Model Details** for transparency on how the model was trained and its performance.
+4. **Examples** of input and output to demonstrate the functionality visually.
+5. **FAQ** to address common issues or questions users may have.
+6. **Contributing Guidelines** for encouraging others to contribute.
+7. **Testing Instructions** in case users want to run tests or contribute improvements.
+8. **License Section** for clarity on the terms of use.
+
+```
