@@ -76,3 +76,11 @@ To run this application locally, follow these steps:
 - YOLOv8: [Ultralytics YOLO](https://github.com/ultralytics/yolov5)
 - Streamlit: [Streamlit Documentation](https://docs.streamlit.io/)
 - PIL: [Pillow Documentation](https://pillow.readthedocs.io/en/stable/)
+
+## Citation
+
+If you use this code in your research or projects, please cite it as follows:
+
+[![DOI](https://zenodo.org/badge/774683487.svg)](https://doi.org/10.5281/zenodo.18112721)
+
+DOI: [10.5281/zenodo.18112721](https://doi.org/10.5281/zenodo.18112721)
