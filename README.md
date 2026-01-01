@@ -57,13 +57,13 @@ To run this application locally, follow these steps:
 1. Clone this repository to your local machine.
    ```bash
    git clone https://github.com/yourusername/architectural-floor-plan-object-detection.git
-````
+    ```
 
 2. Navigate to the project directory.
-
    ```bash
    cd architectural-floor-plan-object-detection
    ```
+
 3. Install the required dependencies:
 
    ```bash
@@ -97,27 +97,6 @@ Example of `config.yaml`:
 confidence_threshold: 0.5
 model_weights: best.pt
 ```
-
-## Model Details
-
-The YOLOv8 model was trained to detect various elements in architectural floor plans, such as:
-
-* Walls
-* Doors
-* Windows
-* Columns
-
-The model was trained using a custom dataset with [X] images over [Y] epochs. The model achieves a precision of [Z]% and recall of [W]% on the validation set.
-
-## Examples
-
-### Input: Floor Plan Image
-
-![Floor Plan Input](example-input.jpg)
-
-### Output: Detected Objects
-
-![Detected Objects](example-output.jpg)
 
 ## FAQ
 
@@ -162,7 +141,7 @@ To run tests on your local machine:
 * **Streamlit**: [Streamlit Documentation](https://docs.streamlit.io/)
 * **Pillow**: [Pillow Documentation](https://pillow.readthedocs.io/en/stable/)
 * **Dataset**: [Roboflow - Floor Plan Dataset](https://universe.roboflow.com/walldetect-f9eio/floor_plan_multiple)
-* **Special Thanks** to [Autodesk](https://www.autodesk.com/) for their interest in this project.
+
 
 ## License
 
@@ -187,5 +166,3 @@ DOI: [10.5281/zenodo.18112721](https://doi.org/10.5281/zenodo.18112721)
 6. **Contributing Guidelines** for encouraging others to contribute.
 7. **Testing Instructions** in case users want to run tests or contribute improvements.
 8. **License Section** for clarity on the terms of use.
-
-```
