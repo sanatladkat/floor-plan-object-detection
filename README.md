@@ -149,8 +149,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Citation
 
-If you use this code in your research or projects, please cite it as follows:
+If you use this project, please cite it as:
 
-[![DOI](https://zenodo.org/badge/774683487.svg)](https://doi.org/10.5281/zenodo.18112721)
+**MLA Style**:  
+Ladkat, Sanat N. *Architectural Floor Plan Object Detection*. 2024, [https://doi.org/10.5281/zenodo.18112721](https://doi.org/10.5281/zenodo.18112721).
 
-DOI: [10.5281/zenodo.18112721](https://doi.org/10.5281/zenodo.18112721)
+**APA Style**:  
+Ladkat, S. N. (2024). *Architectural Floor Plan Object Detection*. Zenodo. [https://doi.org/10.5281/zenodo.18112721](https://doi.org/10.5281/zenodo.18112721).
+
+**BibTeX**:
+```bibtex
+@misc{ladkat2024architectural,
+  author = {Sanat N. Ladkat},
+  title = {Architectural Floor Plan Object Detection},
+  year = {2024},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.18112721},
+  url = {https://doi.org/10.5281/zenodo.18112721}
+}
+```
