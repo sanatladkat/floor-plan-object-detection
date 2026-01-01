@@ -154,15 +154,3 @@ If you use this code in your research or projects, please cite it as follows:
 [![DOI](https://zenodo.org/badge/774683487.svg)](https://doi.org/10.5281/zenodo.18112721)
 
 DOI: [10.5281/zenodo.18112721](https://doi.org/10.5281/zenodo.18112721)
-
-```
-
-### Key Additions:
-1. **DOI Badge and Citation** at the top, so users can easily cite your work.
-2. **Installation Instructions** with specific steps.
-3. **Model Details** for transparency on how the model was trained and its performance.
-4. **Examples** of input and output to demonstrate the functionality visually.
-5. **FAQ** to address common issues or questions users may have.
-6. **Contributing Guidelines** for encouraging others to contribute.
-7. **Testing Instructions** in case users want to run tests or contribute improvements.
-8. **License Section** for clarity on the terms of use.
