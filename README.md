@@ -56,7 +56,7 @@ To run this application locally, follow these steps:
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/architectural-floor-plan-object-detection.git
+   git clone https://github.com/sanatladkat/floor-plan-object-detection.git
     ```
 
 2. Navigate to the project directory.
